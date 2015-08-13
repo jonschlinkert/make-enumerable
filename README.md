@@ -1,6 +1,6 @@
 # make-enumerable [![NPM version](https://badge.fury.io/js/make-enumerable.svg)](http://badge.fury.io/js/make-enumerable)
 
-> Make all the properties of an object enumberable.
+> Make all the properties of an object enumerable. Optionally deep, shallow by default.
 
 ## Install
 
@@ -50,7 +50,7 @@ makeEnumerable(obj, true);
 ## Related projects
 
 * [define-property](https://github.com/jonschlinkert/define-property): Define a non-enumerable property on an object.
-* [delegate-properties](https://github.com/jonschlinkert/delegate-properties): Copy properties from one object to another and make them non-enumerable, or make existing properties… [more](https://github.com/jonschlinkert/delegate-properties)
+* [delegate-properties](https://github.com/jonschlinkert/delegate-properties): Deep-clone properties from one object to another and make them non-enumerable, or make existing properties… [more](https://github.com/jonschlinkert/delegate-properties)
 * [delegate-object](https://github.com/doowb/delegate-object): Copy properties from an object to another object, where properties with function values will be… [more](https://github.com/doowb/delegate-object)
 * [forward-object](https://github.com/doowb/forward-object): Copy properties from an object to another object, where properties with function values will be… [more](https://github.com/doowb/forward-object)
 * [mixin-deep](https://github.com/jonschlinkert/mixin-deep): Deeply mix the properties of objects into the first object. Like merge-deep, but doesn't clone.
