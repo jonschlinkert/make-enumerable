@@ -1,0 +1,51 @@
+{
+  "name": "make-enumerable",
+  "description": "Make all the properties of an object enumberable.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/make-enumerable",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/make-enumerable",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/make-enumerable/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "prepublish": "browserify -o browser.js -e index.js -s index --bare"
+  },
+  "devDependencies": {
+    "delegate-properties": "^0.2.0",
+    "mocha": "^2.2.5"
+  },
+  "keywords": [
+    "define",
+    "define-property",
+    "enumerable",
+    "key",
+    "non",
+    "non-enumerable",
+    "object",
+    "prop",
+    "property",
+    "value"
+  ],
+  "verb": {
+    "related": {
+      "list": [
+        "mixin-deep",
+        "mixin-object",
+        "define-property",
+        "delegate-properties",
+        "delegate-object",
+        "forward-object"
+      ]
+    }
+  }
+}
