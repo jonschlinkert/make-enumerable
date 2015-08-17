@@ -15,6 +15,12 @@ var init = {
   foo: {bar: {baz: {a: 'aaa', b: 'bbb', c: 'ccc'}}}
 };
 
+function App() {};
+App.staticFoo = function() {};
+App.prototype.set = function() {};
+App.prototype.get = function() {};
+App.prototype.del = function() {};
+
 var provider = delegate({}, init);
 delegate(provider.foo);
 delegate(provider.foo.bar);
@@ -28,6 +34,11 @@ describe('makeEnumerable', function () {
     assert.deepEqual(provider.foo.bar, {});
     assert.deepEqual(provider.foo.bar.baz, {});
     assert.deepEqual(provider.foo.bar.baz.a, 'aaa');
+  });
+
+  it('should make prototype properties enumerable:', function () {
+    var obj = makeEnumerable(App);
+    console.log(obj)
   });
 
   it('should make shallow properties enumerable:', function () {
