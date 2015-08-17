@@ -1,7 +1,7 @@
 {
   "name": "make-enumerable",
   "description": "Make all the properties of an object enumerable. Optionally deep, shallow by default. ",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/make-enumerable",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/make-enumerable",
